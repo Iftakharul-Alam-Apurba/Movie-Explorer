@@ -8,7 +8,7 @@ https://dummy-movie-explorer.netlify.app
 
 ## 📂 GitHub Repository
 
-Add your GitHub repository link here.
+git clone https://github.com/Iftakharul-Alam-Apurba/Movie-Explorer.git
 
 ---
 
