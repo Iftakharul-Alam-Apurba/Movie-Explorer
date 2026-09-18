@@ -1,35 +1,134 @@
-# React + TypeScript + Vite
+# 🎬 Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive movie and TV show explorer built with **React, TypeScript, Tailwind CSS, and DaisyUI**. The application uses the **TVMaze API** to browse and search for movies and TV shows.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://dummy-movie-explorer.netlify.app
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Add your GitHub repository link here.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+---
 
-## Expanding the Oxlint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+* 🏠 Responsive home page with hero section
+* 🎬 Featured shows displayed on the home page
+* 🔎 Search shows by title
+* 📱 Fully responsive design for mobile, tablet, and desktop
+* ⭐ Show ratings
+* 📅 Release/premiere dates
+* 🖼️ Show posters
+* 📖 Show details in a modal
+* 🎭 Genres, language, status, runtime, and network information
+* ⌨️ Close details modal using the Escape key
+* 🖱️ Close modal by clicking outside it
+* ⏳ Loading state while fetching data
+* ❌ Message displayed when no shows are found
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 🛠️ Technologies Used
+
+* **React**
+* **TypeScript**
+* **Vite**
+* **Tailwind CSS**
+* **DaisyUI**
+* **TVMaze API**
+
+## 🔌 API
+
+This project uses the **TVMaze API** to fetch show information.
+
+### Get all shows
+
+```text
+https://api.tvmaze.com/shows
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Search shows
+
+```text
+https://api.tvmaze.com/search/shows?q={query}
+```
+
+TVMaze API documentation:
+
+https://www.tvmaze.com/api
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Nav.tsx
+│   ├── Hero.tsx
+│   ├── Footer.tsx
+│   ├── SearchBar.tsx
+│   ├── MovieCard.tsx
+│   └── MovieModal.tsx
+│
+├── pages/
+│   ├── HomePage.tsx
+│   └── ListingPage.tsx
+│
+├── types/
+│   └── type.ts
+│
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### 2. Go to the project directory
+
+```bash
+cd Movie-Explorer
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will run locally using the Vite development server.
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+## 📱 Responsive Design
+
+The application is designed to work across different screen sizes:
+
+* 📱 Mobile — single-column layout
+* 💻 Tablet — multi-column layout
+* 🖥️ Desktop — four-column movie/show grid
+
+## 👨‍💻 Author
+
+**Iftakharul Alam**
+
+CSE Student | Aspiring Full-Stack Developer
+
+## 📄 License
+
+This project was created for educational purposes as part of a web development assignment.
